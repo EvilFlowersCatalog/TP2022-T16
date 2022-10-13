@@ -1,11 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
+import memberPhoto from '@site/static/img/docusaurus.png';
 import styles from './styles.module.css';
 
 type MemberItem = {
   title: string;
   role: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  imageUrl: string;
   description: JSX.Element;
 };
 
@@ -13,7 +14,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Ing. Jakub Dubec',
     role: 'Product Owner',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    imageUrl: memberPhoto,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -24,7 +25,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Rastislav Balcerčík',
     role: 'Project Manager',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    imageUrl: memberPhoto,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -35,7 +36,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Juraj Valiček',
     role: 'Web Developer',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    imageUrl: memberPhoto,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -46,7 +47,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Jakub Sorád',
     role: 'Software Developer & Tester',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imageUrl: memberPhoto,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -57,7 +58,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Róbert Szabó',
     role: 'Software Developer',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imageUrl: memberPhoto,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -68,7 +69,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Daniel Cok',
     role: 'Software Developer',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imageUrl: memberPhoto,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -79,7 +80,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Matej Lánik',
     role: 'Software Developer',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imageUrl: memberPhoto,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -89,11 +90,11 @@ const TeamList: MemberItem[] = [
   },
 ];
 
-function Feature({title, role, Svg, description}: MemberItem) {
+function Feature({title, role, imageUrl, description}: MemberItem) {
   return (
-    <div className={clsx('col col--3')}>
+    <div className={clsx('col col--6')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={imageUrl} className={styles.imageStyle} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -108,7 +109,7 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
-        <p><h1 className="hero__title">O nás</h1></p>
+        <p><h1 className="hero__title">Náš tím</h1></p>
         <div className="row">
           {TeamList.map((props, idx) => (
             <Feature key={idx} {...props} />

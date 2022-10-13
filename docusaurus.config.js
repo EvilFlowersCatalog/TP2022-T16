@@ -58,7 +58,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Dokumentácia',
+            label: 'Zápisnice',
           },
           {
             href: 'https://github.com/EvilFlowersCatalog/EvilFlowersViewer',
