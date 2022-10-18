@@ -48,7 +48,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'TP16',
+        title: 'T16',
         logo: {
           alt: 'Tímový projekt',
           src: 'img/logo.svg',
@@ -59,6 +59,12 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Zápisnice',
+          },
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Dokumentácia',
           },
           {
             href: 'https://github.com/EvilFlowersCatalog/EvilFlowersViewer',

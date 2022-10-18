@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import memberPhoto from '@site/static/img/docusaurus.png';
 import styles from './styles.module.css';
 
 type MemberItem = {
@@ -14,7 +13,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Ing. Jakub Dubec',
     role: 'Product Owner',
-    imageUrl: memberPhoto,
+    imageUrl: require('@site/static/img/kubod.jpeg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -25,7 +24,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Rastislav Balcerčík',
     role: 'Project Manager',
-    imageUrl: memberPhoto,
+    imageUrl: require('@site/static/img/rasto.jpeg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -36,7 +35,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Juraj Valiček',
     role: 'Web Developer',
-    imageUrl: memberPhoto,
+    imageUrl: require('@site/static/img/juro1.jpeg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -47,7 +46,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Jakub Sorád',
     role: 'Software Developer & Tester',
-    imageUrl: memberPhoto,
+    imageUrl: require('@site/static/img/kubo.jpeg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -58,7 +57,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Róbert Szabó',
     role: 'Software Developer',
-    imageUrl: memberPhoto,
+    imageUrl: require('@site/static/img/robo.jpeg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -69,7 +68,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Daniel Cok',
     role: 'Software Developer',
-    imageUrl: memberPhoto,
+    imageUrl: require('@site/static/img/dano.jpeg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -80,7 +79,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Matej Lánik',
     role: 'Software Developer',
-    imageUrl: memberPhoto,
+    imageUrl: require('@site/static/img/mato.jpeg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -96,10 +95,9 @@ function Feature({title, role, imageUrl, description}: MemberItem) {
       <div className="text--center">
         <img src={imageUrl} className={styles.imageStyle} />
       </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <h4>{role}</h4>
-        <p>{description}</p>
+      <div className="text--center padding-horiz--md margin--md">
+        <h2>{title}</h2>
+        <p>{role}</p>
       </div>
     </div>
   );
