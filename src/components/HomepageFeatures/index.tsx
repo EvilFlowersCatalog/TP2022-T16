@@ -13,7 +13,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Ing. Jakub Dubec',
     role: 'Product Owner',
-    imageUrl: require('/static/img/kubod.jpeg').default,
+    imageUrl: require('/img/kubod.jpeg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -24,7 +24,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Rastislav Balcerčík',
     role: 'Project Manager',
-    imageUrl: require('/static/img/rasto.jpeg').default,
+    imageUrl: require('/img/rasto.jpeg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -35,7 +35,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Juraj Valiček',
     role: 'Web Developer',
-    imageUrl: require('/static/img/juro1.jpeg').default,
+    imageUrl: require('/img/juro1.jpeg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -46,7 +46,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Jakub Sorád',
     role: 'Software Developer & Tester',
-    imageUrl: require('/static/img/kubo.jpeg').default,
+    imageUrl: require('/img/kubo.jpeg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -57,7 +57,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Róbert Szabó',
     role: 'Software Developer',
-    imageUrl: require('/static/img/robo.jpeg').default,
+    imageUrl: require('/img/robo.jpeg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -68,7 +68,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Daniel Cok',
     role: 'Software Developer',
-    imageUrl: require('/static/img/dano.jpeg').default,
+    imageUrl: require('/img/dano.jpeg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -79,7 +79,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Bc. Matej Lánik',
     role: 'Software Developer',
-    imageUrl: require('/static/img/mato.jpeg').default,
+    imageUrl: require('/img/mato.jpeg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can

@@ -10,6 +10,7 @@ const config = {
   tagline: 'Tímový projekt',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
+  staticDirectories: ['static'],
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
