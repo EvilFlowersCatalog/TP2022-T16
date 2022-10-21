@@ -13,7 +13,7 @@ const TeamList: MemberItem[] = [
   {
     title: 'Ing. Jakub Dubec',
     role: 'Product Owner',
-    imageUrl: require('/img/kubod.jpeg').default,
+    imageUrl: require('@site/static/img/kubod.jpeg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
