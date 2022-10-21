@@ -9,7 +9,7 @@
 | **Výsledok** | PASS/FAIL |
 
 ####  Vstupný test č.2
-|   |   |
+|   |    |
 |---|---|
 |**Vstupné podmienky**| Používateľ nemá platné prihlasovacie údaje do systému Elvíra. |
 | **Výstupné podmienky** | Používateľ nie je úspešne prihlásený. |
